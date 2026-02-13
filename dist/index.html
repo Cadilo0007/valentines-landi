@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Quicksand:wght@300..700&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        overflow: hidden;
+        background-color: #1a0208;
+      }
+      .font-title { font-family: 'Great Vibes', cursive; }
+      .font-signature { font-family: 'Pinyon Script', cursive; }
+      
+      @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg) scale(0.8); opacity: 0; }
+        15% { opacity: 0.7; }
+        85% { opacity: 0.7; }
+        100% { transform: translateY(-100vh) rotate(360deg) scale(1.4); opacity: 0; }
+      }
+      .heart-particle {
+        position: absolute;
+        bottom: -50px;
+        pointer-events: none;
+        animation: float 6s ease-in infinite;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes scaleUp {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      @keyframes heartBeat {
+        0% { transform: scale(1); }
+        14% { transform: scale(1.1); }
+        28% { transform: scale(1); }
+        42% { transform: scale(1.1); }
+        70% { transform: scale(1); }
+      }
+      @keyframes shimmer-fast {
+        0% { background-position: -200% center; }
+        100% { background-position: 200% center; }
+      }
+
+      .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+      }
+
+      .shimmer-btn {
+        background: linear-gradient(90deg, #db2777, #f472b6, #db2777);
+        background-size: 200% auto;
+        animation: shimmer-fast 4s linear infinite;
+      }
+      
+      .stagger-in { animation: fadeIn 0.8s ease-out forwards; }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-CpQHcYe3.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
